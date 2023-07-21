@@ -2848,7 +2848,7 @@ var Requestable = function () {
          if (AcceptHeader) {
             delete data.AcceptHeader;
          }
-         var headers = this.__getRequestHeaders(raw, AcceptHeader);
+         var headers = this.__getRequestHeaders('json', AcceptHeader);
 
          var queryParams = {};
 
